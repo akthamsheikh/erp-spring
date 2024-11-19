@@ -21,3 +21,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+syntax: regexp
+^(framework|applications|plugins)/[^/]+/build/.*$
+^ofbiz\.jar$
+^runtime/data/derby/.*$
+^runtime/logs/.*(log|html)(|.\d+)$
+^runtime/logs/access_log.\d\d\d\d-\d\d-\d\d$
+^runtime/(catalina/work|logs/test-results)/.*$
+^runtime/data.zip$
+^runtime/test-list-build.xml$
